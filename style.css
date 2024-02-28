@@ -12,6 +12,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 h3 {
@@ -20,4 +22,47 @@ h3 {
     letter-spacing: 0.5rem;
     font-size: 1.5rem;
     margin-bottom: 1rem;
+}
+
+.lorem-text > p {
+    margin-bottom: 1rem;
+    color: #35374B;
+    line-height: 24px;
+    text-align: justify;
+}
+
+#amount {
+    width: 35px;
+    text-align: center;
+    border-radius: 5px;
+    border: #40A2E3 1px solid;
+    padding: 0.5rem 0.1rem;
+    margin-right: 1rem;
+    font-size: 18px;
+}
+
+.btn {
+    background-color: #40A2E3;
+    color: #fff;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 1rem;
+    transition: 0.3s;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+label {
+    font-size: 18px;
+    color: #35374B;
+    margin-right: 1rem;
+}
+
+.lorem-form {
+    margin-bottom: 2rem;
 }
