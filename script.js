@@ -40,4 +40,15 @@ function generateLorem() {
     output += `<p>${loremArray[random]}</p>`;
   }
   loremText.innerHTML = output;
+  if (loremText.textContent === "") {
+    copyBtn.classList.toggle("hidden");
+  }
 }
+
+const copyBtn = document.querySelector(".copy-btn");
+
+copyBtn.addEventListener("click", () => {
+  let text = document.querySelector(".lorem-text").textContent;
+  navigator.clipboard.writeText(text);
+});
+
