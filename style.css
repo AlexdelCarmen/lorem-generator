@@ -14,6 +14,7 @@
     justify-content: center;
     max-width: 600px;
     margin: 0 auto;
+    position: relative;
 }
 
 h3 {
@@ -70,3 +71,36 @@ label {
 .hidden {
     display: none;
 }
+
+.copy-btn {
+    background-color: #FBA834;
+    color: #fff;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 1rem;
+    transition: 0.3s;
+    position: fixed;
+    top: 25%;
+    right: 20%;
+}
+
+.notification {
+    background-color: #35374B;
+    color: #fff;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 1rem;
+    transition: all 0.3s;
+    position: fixed;
+    top: 50%; 
+    opacity: 0.85; 
+}
+
+
+

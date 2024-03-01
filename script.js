@@ -42,13 +42,26 @@ function generateLorem() {
   loremText.innerHTML = output;
   if (loremText.textContent === "") {
     copyBtn.classList.toggle("hidden");
+  } else {
+    copyBtn.classList.remove("hidden");
   }
+  
 }
 
 const copyBtn = document.querySelector(".copy-btn");
+const notification = document.querySelector(".notification");
+
+if (loremText.textContent === "") {
+  copyBtn.classList.toggle("hidden");
+}
 
 copyBtn.addEventListener("click", () => {
   let text = document.querySelector(".lorem-text").textContent;
   navigator.clipboard.writeText(text);
+  notification.classList.remove("hidden");
+  setTimeout(() => {
+    notification.classList.add("hidden");
+  }, 2000);
 });
+
 
