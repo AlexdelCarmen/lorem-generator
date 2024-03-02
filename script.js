@@ -29,6 +29,9 @@ form.addEventListener("submit", (e) => {
 });
 
 function generateLorem() {
+  if (amount.value < 0) {
+    amount.value = 0;
+  }
   let output = "";
   if (amount.value === "" || amount.value < 0) {
     let random = Math.floor(Math.random() * loremArray.length);
@@ -41,7 +44,7 @@ function generateLorem() {
   }
   loremText.innerHTML = output;
   if (loremText.textContent === "") {
-    copyBtn.classList.toggle("hidden");
+    copyBtn.classList.add("hidden");
   } else {
     copyBtn.classList.remove("hidden");
   }
