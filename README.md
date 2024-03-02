@@ -27,7 +27,8 @@ This application is built using HTML, CSS, and JavaScript. The "Copy to Clipboar
 ## License
 
 This project is licensed under the MIT License. Please refer to the LICENSE file for details.
-Contributing
+
+## Contributing
 
 We welcome contributions to this project! Feel free to fork the repository and submit pull requests with your improvements.
 
