@@ -16,11 +16,11 @@ This simple web application generates Lorem Ipsum text, commonly used as placeho
     4. The generated Lorem Ipsum text will appear in the output area.
     5. Click the "Copy to Clipboard" button to copy the text.
 
-## Technical Details
-
 ## Screenshot
 
 ![Screenshot](./screenshot.png)
+
+## Technical Details
 
 This application is built using HTML, CSS, and JavaScript. The "Copy to Clipboard" functionality relies on modern browser APIs and might not work in older browsers.
 
